@@ -50,7 +50,7 @@ export default Simple2;
 
 _________________________________________________________________________________________________________________________________________________________
 
-CONDITIONAL RENDERING
+CONDITIONAL RENDERING                          //We use Ternary Operator for Rendering ...... It gives the best apprearence of the Screen.
 ----------  ---------
   import Car from './car'
   function CarCar(){
@@ -63,4 +63,23 @@ CONDITIONAL RENDERING
   }
 
 
-//notes: {  !==   && !==  : null}  this null helps to keep the tags are looks good .. normal output :the choco undefined  undefined ..i like it  (VS)  the choco.. i like
+//notes: {  !==   && !==  : null}  this null helps to keep the tags are looks good .. normal output :the choco undefined  undefined ..i like it  (VS)  the choco.. I like
+
+eg2:
+----
+  const carInfo={};
+const showCarInfo =carInfo.brand !== undefined && carInfo.color !== undefined;
+
+return(
+  <>
+  {showCarInfo && <Car carInfo={carInfo}/> }
+  </>)
+
+
+eg3:
+----
+const isDoorOpened=false;
+return(
+  <>
+  {isDoorOpened ? <h2>Car is Opened</h2>: <h2>Car is Closed</h2>}
+  </>)
