@@ -17,7 +17,7 @@ const Fun1 = () => {
 
 }
 const Fun2 = (props) => {
-    const {character,removeCharacter}=props
+    // const {character,removeCharacter}=props                  ****************//destructuring//************
     const rows=character.map((e,i)=>{
         return (<tr key={i}><td>{e.name}</td>
         <td>{e.age}</td>
@@ -87,13 +87,13 @@ this.setState({character:filtered})
 }
 render(){
    
-  const {character}=this.state
+  const {character}=this.state                                                  //using my state by this KEYWORD......
 
     
     return (
         <div className='container'>
             <h1>Table</h1>
-            <Fun2 removeCharacter={this.removeCharacter} character={character}/>
+            <Fun2 removeCharacter={this.removeCharacter} character={character}/>                 //We want to Declare like this.........
         </div>
     )
 }}
