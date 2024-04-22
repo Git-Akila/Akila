@@ -47,3 +47,20 @@ class Simple2 extends React.Component{
   }
  }
 export default Simple2;
+
+_________________________________________________________________________________________________________________________________________________________
+
+CONDITIONAL RENDERING
+----------  ---------
+  import Car from './car'
+  function CarCar(){
+  //const carInfo={brand: "kitkat", color: "Chocolate" }
+  const carInfo={};
+  return(
+    <>
+  {carInfo.brand !== undefined && carInfo.color !== undefined <Car carInfo={carInfo}/> : null}
+    </>)
+  }
+
+
+//notes: {  !==   && !==  : null}  this null helps to keep the tags are looks good .. normal output :the choco undefined  undefined ..i like it  (VS)  the choco.. i like
