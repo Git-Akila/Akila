@@ -8,7 +8,7 @@ How Props works??????
   const carInfo={brand: "kitKat", color: "red"}
   return(
     <>
-    <Simple1 carInfo={carInfo}/>
+    <Simple1 carInfo={carInfo}/>                        //Self Closing Tag   and DeStucturing data
     <Simple2 carInfo={carInfo}/>
     </>
     )
