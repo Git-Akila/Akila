@@ -2,6 +2,11 @@
 import React, { useState } from 'react'
 
 function ToDoList1() {
+
+    // JSON.parse(localStorage.getItem('todo_list))
+    //localStorage.setItem("todo_list",JSON.stringify())
+
+    
     const [Data1, setData1] = useState(
         [
             {
